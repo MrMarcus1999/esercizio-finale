@@ -1,0 +1,5 @@
+<form #form="ngForm" (ngSubmit)="request()" >
+    <input class="lista-cocktails"  type="text" placeholder="Inserisci il tuo cocktail" ngModel #namefield="ngModel" >
+        <small>inserisci il testo</small>
+    <button  [disabled]="form.invalid" class="btn-cocktails">Lista Cocktail</button>
+</form>
